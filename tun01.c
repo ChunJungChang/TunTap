@@ -5,7 +5,7 @@
  * #sudo ip addr add 203.0.113.1/24 dev tun01 -> set_dev_ip()
  * #sudo ip link set up dev tun01 -> set_dev_up()
  * ip link show tun01
- * ping 203.0.113.2
+ * ping 203.0.113.2 -I tun01
  */
 
 /*
@@ -14,7 +14,7 @@
  * #sudo ip tuntap add dev tun01 mode tun -> tun_alloc()
  * #sudo ip link set up dev tun01 -> set_dev_up()
  * ip link show tun01
- * ping -I tun03 8.8.8.8
+ * ping 8.8.8.8 -I tun01
  *
  * IPv4: src=10.206.67.212 dst=8.8.8.8 proto=1(icmp) ttl=64
  *  HEX: 45000054fbe440004001e0120ace43d4080808080800b008d3150006ed9f9b65000000002503080000000000101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637
