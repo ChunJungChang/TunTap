@@ -1,9 +1,9 @@
 /*
  * cc -g tap01.c
- * #sudo ./a.out tap01
+ * sudo ./a.out tap01
  * #sudo ip tuntap add dev tap01 mode tap -> tap_alloc()
  * #sudo ip addr add 203.0.113.1/24 dev tap01 -> set_dev_ip()
- * sudo ip link set up dev tap01 -> set_dev_up()
+ * #sudo ip link set up dev tap01 -> set_dev_up()
  * ip link show tap01
  * ping 203.0.113.2 -I tap01
  */
